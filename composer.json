@@ -1,0 +1,49 @@
+{
+    "name": "emedia/oxygen-settings",
+    "description": "Application settings manager for Oxygen.",
+    "type": "package",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Saranga Abeykoon",
+            "email": "saranga@elegantmedia.lk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "^5.7",
+        "illuminate/database": "^5.7",
+        "emedia/quick-data-laravel": "1.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "EMedia\\Settings\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EMedia\\Settings\\SettingsServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type":"git",
+            "url":"https://github.com/emedia1/formation.git"
+        },
+        {
+            "type":"git",
+            "url":"https://github.com/emedia1/quickdata-laravel.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/emedia1/laravel-helpers.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/emedia1/php-helpers.git"
+        }
+    ]
+}
